@@ -1,0 +1,5 @@
+---
+"gift-parser": minor
+---
+
+Initialization
