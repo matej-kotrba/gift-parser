@@ -1,5 +1,5 @@
 {
-  "name": "gift-parser",
+  "name": "gift-format-parser",
   "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",
