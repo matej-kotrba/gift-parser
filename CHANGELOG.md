@@ -1,5 +1,11 @@
 # gift-parser
 
+## 0.2.1
+
+### Patch Changes
+
+- Updated the index export
+
 ## 0.2.0
 
 ### Minor Changes
