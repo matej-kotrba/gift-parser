@@ -1,5 +1,11 @@
 # gift-parser
 
+## 0.2.2
+
+### Patch Changes
+
+- acc0bb8: Fixed export and types
+
 ## 0.2.1
 
 ### Patch Changes

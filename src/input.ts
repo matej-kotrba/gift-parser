@@ -1,17 +1,17 @@
-export type QuestionTypes = "MC" | "SC"
+export type GIFTQuestionTypes = "MC" | "SC"
 
-export type Question = {
+export type GIFTQuestion = {
   questionName: string;
   title: string;
   formatter: "plain";
-  type: QuestionTypes;
+  type: GIFTQuestionTypes;
   answers: {
     text: string;
     isCorrect: boolean;
   }[]
 }
 
-export function generateGIFT(data: Question[]) {
+export function generateGIFT(data: GIFTQuestion[]) {
   const result = data.map((question) => {
     if (question.type === "SC") {
       const answers = question.answers.map((answer) => {
