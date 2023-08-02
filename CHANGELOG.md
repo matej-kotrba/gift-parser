@@ -1,5 +1,17 @@
 # gift-parser
 
+## 0.2.4
+
+### Patch Changes
+
+- added formatter value
+
+## 0.2.3
+
+### Patch Changes
+
+- Correctly exporting types
+
 ## 0.2.2
 
 ### Patch Changes

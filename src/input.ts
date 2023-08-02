@@ -15,7 +15,7 @@ export function generateGIFT(data: GIFTQuestion[]) {
   const result = data.map((question) => {
     if (question.type === "SC") {
       const answers = question.answers.map((answer) => {
-        return answer.isCorrect ? `=${answer.text}` : `~${answer.text}`
+        return answer.isCorrect ? `=[${question.formatter}]${answer.text}` : `~[${question.formatter}]${answer.text}`
       }).join(" ");
       return `::${question.questionName}::${question.title}{${answers}}`
     }
@@ -25,7 +25,7 @@ export function generateGIFT(data: GIFTQuestion[]) {
       }).length).toFixed(4)
 
       const answers = question.answers.map((answer) => {
-        return answer.isCorrect ? `~%${answerPercentige}%${answer.text}` : `~${answer.text}`
+        return answer.isCorrect ? `~%${answerPercentige}%[${question.formatter}]${answer.text}` : `~[${question.formatter}]${answer.text}`
       }).join(" ");
       return `::${question.questionName}::${question.title}{${answers}}`
     }
