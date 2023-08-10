@@ -1,4 +1,4 @@
-export type GIFTQuestionTypes = "MC" | "SC"
+export type GIFTQuestionTypes = "MC" | "SC" | "SA"
 
 export type GIFTQuestion = {
   questionName: string;
@@ -28,6 +28,15 @@ export function generateGIFT(data: GIFTQuestion[]) {
         return answer.isCorrect ? `~%${answerPercentige}%[${question.formatter}]${answer.text}` : `~[${question.formatter}]${answer.text}`
       }).join(" ");
       return `::${question.questionName}::${question.title}{${answers}}`
+    }
+    else if (question.type === "SA") {
+      const answers = question.answers.map((answer) => {
+        return `=%100%[${question.formatter}]${answer.text}#`
+      }).join(" ");
+      return `::${question.questionName}::${question.title}{${answers}}`
+    }
+    else {
+      throw new Error("Unknown question type")
     }
   })
   return result.join("\n\n")
