@@ -1,5 +1,17 @@
 # gift-parser
 
+## 0.2.7
+
+### Patch Changes
+
+- Fixed bug
+
+## 0.2.6
+
+### Patch Changes
+
+- a7526be: Added connect input type support
+
 ## 0.2.5
 
 ### Patch Changes
