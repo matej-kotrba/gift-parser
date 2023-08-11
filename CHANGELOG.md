@@ -1,5 +1,11 @@
 # gift-parser
 
+## 0.2.8
+
+### Patch Changes
+
+- Fixed incorrect parsing
+
 ## 0.2.7
 
 ### Patch Changes

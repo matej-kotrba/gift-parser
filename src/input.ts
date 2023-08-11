@@ -39,7 +39,7 @@ export function generateGIFT(data: GIFTQuestion[]) {
     else if (question.type === "CA") {
       const answers = question.answers.map(answer => {
         if (!answer.answerPart || !answer.text) throw new Error("Answer part or text is missing")
-        return `=%100%[${question.formatter}]${answer.text} -> ${answer.answerPart}`
+        return `=${answer.text} -> ${answer.answerPart}`
       }).join(" ")
       return `::${question.questionName}::${question.title}{${answers}}`
     }
